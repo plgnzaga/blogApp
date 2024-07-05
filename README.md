@@ -1,0 +1,1 @@
+- Run `npm run dev` to test the application.
