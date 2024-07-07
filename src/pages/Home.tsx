@@ -37,7 +37,7 @@ const Home = () => {
 
    return (
 
-      <Box sx={{ p: 2,mt:10}} className="wrapper">
+      <Box sx={{ p: 2,mt:10,maxHeight:'90dvh',overflowY:'scroll'}} className="wrapper">
          <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: '2rem' }}>
             {state.blogs.map((blog, index) =>
                <Paper sx={{ p: 2, display: 'grid', gridTemplateColumns: '1fr', gridGap: '1rem', flexBasis: '100%' }} key={index}>

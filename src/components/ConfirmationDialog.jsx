@@ -1,4 +1,4 @@
-import { Typography } from "@mui/material";
+import { Grid, Typography } from "@mui/material";
 import CustomDialog from "./Modal"
 import { Report } from "@mui/icons-material";
 import { useContext } from "react";
@@ -23,11 +23,13 @@ const ConfirmDialog = (props) => {
             isOpen={openConfirmation}
             headerName={
                 <Typography variant="medium" className="font-medium">
-                    <Report />
+                    <Report sx={{fontSize:'1.5rem'}} />
                 </Typography>
             }
             body={
-                <Typography variant="small">Are you sure, you want to remove this post?</Typography>
+                <Grid sx={{pt:2,pb:2}}>
+                    <Typography>Are you sure, you want to remove this post?</Typography>
+                </Grid>
             }
             onClose={() => {
                 setOpenConfirmation(false);
