@@ -15,6 +15,9 @@ const ConfirmDialog = (props) => {
                 id: targetId
             }
         })
+        dispatch({
+            type:"SET_FIELDS",payload:[]
+        })
     }
     
     return (
